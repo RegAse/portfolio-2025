@@ -3,6 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
 import { Link } from "react-router-dom";
 
+import * as data from "./data/data.json";
+
 function App() {
 	// const [count, setCount] = useState(0)
 
@@ -49,6 +51,9 @@ function App() {
 				<div className="projects-section">
 					<h3 className="text-center mb-3">Projects</h3>
 					<div className="row gx-3 gy-3">
+						{data.projects.map((project) => (
+							<div>{project.id} {project.title}</div>
+						))}
 						<div className="col-sm-3">
 							<div className="project-card">
 								<h4>Music Visualizer</h4>
