@@ -1,0 +1,54 @@
+body {
+    font-family: "Lato";
+    // background-color: #131D27;
+    // color: white;
+  }
+
+// Profile-section
+.profile-section{
+    margin-top: 1em;
+    background-color: rgb(240, 240, 240);
+    padding: 2em;
+    padding-bottom: 2em;
+    // color: white;
+}
+
+// Tab-section
+.tab-section{
+    // padding: 1em;
+}
+
+.tab-links{
+    list-style: none;
+    background-color: rgb(61, 72, 88);
+    // padding: 0;
+    padding: 0em 0.2em;
+
+    li{
+        float: left;
+    }
+
+    li a{
+        display: block;
+        color: white;
+        background-color: rgb(75, 75, 75);
+        border-right: 0.15em solid rgb(65, 65, 65);
+        padding: 0.55em 0.1em;
+        text-decoration: none;
+        text-align: center;
+        font-size: 1.1em;
+    }
+
+    li a.active{
+        background-color: rgb(98, 116, 148);
+    }
+
+    li a:hover{
+        background-color: rgb(98, 116, 148);
+    }
+}
+
+// Projects-section
+.projects-section{
+    margin-top: 1em;
+}
