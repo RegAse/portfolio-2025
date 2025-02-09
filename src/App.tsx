@@ -47,34 +47,49 @@ function App() {
 
 				{/* Tab Content grid of projects possibly gifs when hovered over or just thumbnails and able to enlarge it if clicked....*/}
 				<div className="projects-section">
-					<div className="row">
+					<h3 className="text-center mb-3">Projects</h3>
+					<div className="row gx-3 gy-3">
 						<div className="col-sm-3">
-							<img className="img-fluid" src={"images/music-visualizer-1.jpg"} alt="Failed loading" />
-							<h3>Music Visualizer</h3>
+							<div className="project-card">
+								<h4>Music Visualizer</h4>
+								<img className="img-fluid" src={"images/music-visualizer-1.jpg"} alt="Failed loading" />
+							</div>
 						</div>
 						<div className="col-sm-3">
-							<img className="img-fluid" src={"images/music-visualizer-1.jpg"} alt="Failed loading" />
-							<h3>Music Visualizer</h3>
+							<div className="project-card">
+								<h4>Music Visualizer</h4>
+								<img className="img-fluid" src={"images/music-visualizer-1.jpg"} alt="Failed loading" />
+							</div>
 						</div>
 						<div className="col-sm-3">
-							<img className="img-fluid" src={"images/music-visualizer-1.jpg"} alt="Failed loading" />
-							<h3>Music Visualizer</h3>
+							<div className="project-card">
+								<h4>Music Visualizer</h4>
+								<img className="img-fluid" src={"images/music-visualizer-1.jpg"} alt="Failed loading" />
+							</div>
 						</div>
 						<div className="col-sm-3">
-							<img className="img-fluid" src={"images/music-visualizer-1.jpg"} alt="Failed loading" />
-							<h3>Music Visualizer</h3>
+							<div className="project-card">
+								<h4>Music Visualizer</h4>
+								<img className="img-fluid" src={"images/music-visualizer-1.jpg"} alt="Failed loading" />
+							</div>
 						</div>
 						<div className="col-sm-3">
-							<img className="img-fluid" src={"images/music-visualizer-1.jpg"} alt="Failed loading" />
-							<h3>Music Visualizer</h3>
+							<div className="project-card">
+								<h4>Music Visualizer</h4>
+								<img className="img-fluid" src={"images/music-visualizer-1.jpg"} alt="Failed loading" />
+							</div>
 						</div>
 						<div className="col-sm-3">
-							<img className="img-fluid" src={"images/music-visualizer-1.jpg"} alt="Failed loading" />
-							<h3>Music Visualizer</h3>
+							<div className="project-card">
+								<h4>Music Visualizer</h4>
+								<img className="img-fluid" src={"images/music-visualizer-1.jpg"} alt="Failed loading" />
+							</div>
 						</div>
 						<div className="col-sm-3">
-							<img className="img-fluid" src={"images/music-visualizer-1.jpg"} alt="Failed loading" />
-							<h3>Music Visualizer</h3>
+							<div className="project-card">
+								<h4>Music Visualizer</h4>
+								<img className="img-fluid" src={"images/music-visualizer-1.jpg"} alt="Failed loading" />
+							</div>
 						</div>
 					</div>
 				</div>
