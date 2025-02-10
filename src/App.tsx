@@ -1,4 +1,4 @@
-// import { useState } from "react";
+import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.scss";
 import { Link } from "react-router-dom";
@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import * as data from "./data/data.json";
 
 function App() {
-	// const [count, setCount] = useState(0)
+	const [currentViewedProject, setCurrentViewedProject] = useState(0)
 
 	return (
 		<>
@@ -57,9 +57,21 @@ function App() {
 					<div className="row gx-3 gy-3">
 						{data.projects.map((project) => (
 							<div className="col-sm-3">
-								<div className="project-card" style={{ backgroundImage: `url(${project.cover})`}}>
+								<div className="project-card" 
+									style={{ 
+										backgroundImage: `url(${project.cover})`,
+										// scale: (currentViewedProject == project.id ? 2.0 : 1.0),
+										// zIndex: (currentViewedProject == project.id ? 2.0 : 1.0),
+									}} onClick={() => setCurrentViewedProject(project.id)}>
 									{/* <img className="img-fluid" src={project.cover} alt="Failed loading" /> */}
-									<h6>{project.title}</h6>
+									<div style={{ fontSize: (currentViewedProject == project.id ? "0.5em" : "1em")}}>
+										<h6>{project.title}</h6>
+									</div>
+									{(project.id == currentViewedProject) &&
+										<div className="project-card-info">
+											<p>{project.description}</p>
+										</div>
+									}
 								</div>
 							</div>
 						))}

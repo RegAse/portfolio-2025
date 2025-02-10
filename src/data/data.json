@@ -34,6 +34,13 @@
             "description": "A music visualizer I made with React and three.js. I created many different visualizers that give different experiences and you can easily switch between visualizers from the sidebar in real-time. There is also a distraction free mode which will disable the UI so you can enjoy the visuals.",
             "cover": "./images/music-visualizer-1.jpg",
             "live-link": "https://gudmundur-music-player-visualizer-v2.netlify.app/"
+        },
+        {
+            "id": 6,
+            "title": "My Portfolio",
+            "description": "",
+            "cover": "./images/portfolio-1.jpg",
+            "live-link": "https://gudmundur-music-player-visualizer-v2.netlify.app/"
         }
     ]
 }

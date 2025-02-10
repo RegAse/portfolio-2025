@@ -74,6 +74,7 @@ body {
 }
 
 .project-card{
+    position: relative;
     // border: 0.15em solid rgb(238, 238, 238);
     background-color: rgb(252, 252, 252);
     box-shadow: 3px 3px 12px #e6e6e6;
@@ -88,15 +89,29 @@ body {
 
     transition: all 0.1s;
     scale: 1.00;
+    // z-index: 1;
+}
+
+.project-card-info{
+    background-color: rgba(0, 0, 0, 0.596);
+    backdrop-filter: blur(10px);
+    padding: 1em;
+    width: 100%;
+    position: absolute;
+    height: 10em;
+    left: 0;
+    top: 10em;
+    z-index: 1;
 }
 
 .project-card:hover{
     cursor: pointer;
-    background-size: 105%;
+    background-size: 103%;
     background-color: rgb(156, 156, 207);
     // border-radius: 4% 3% 0% 330% / 12% 0% 33% 27%;
     // border-radius: 0% 100% 34% 66% / 100% 45% 55% 0% ;
     box-shadow: 3px 3px 12px #0000007c;
     color: white;
-    scale: 1.05;
+    scale: 1.02;
+    // scale: 2;
 }
