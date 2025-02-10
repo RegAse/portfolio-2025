@@ -74,7 +74,7 @@ body {
 }
 
 .project-card{
-    position: relative;
+    // position: relative;
     // border: 0.15em solid rgb(238, 238, 238);
     background-color: rgb(252, 252, 252);
     box-shadow: 3px 3px 12px #e6e6e6;
@@ -92,17 +92,18 @@ body {
     // z-index: 1;
 }
 
-.project-card-info{
-    background-color: rgba(0, 0, 0, 0.596);
-    backdrop-filter: blur(10px);
-    padding: 1em;
-    width: 100%;
-    position: absolute;
-    height: 10em;
-    left: 0;
-    top: 10em;
-    z-index: 1;
-}
+// .project-card-info{
+//     background-color: rgba(0, 0, 0, 0.596);
+//     backdrop-filter: blur(10px);
+//     padding: 1em;
+//     width: 100%;
+//     position: absolute;
+//     // height: 10em;
+//     // left: 0;
+//     // top: 10em;
+//     width: 100%;
+//     z-index: 1;
+// }
 
 .project-card:hover{
     cursor: pointer;
@@ -115,3 +116,43 @@ body {
     scale: 1.02;
     // scale: 2;
 }
+
+.project-modal{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    // height: 100%;
+    // left: 0;
+    // top: 0;
+    // background-color: rgba(0, 0, 0, 0.521);
+    z-index: 100;
+}
+
+.project-modal-content{
+    color: white;
+    background-color: rgba(32, 32, 32, 0.911);
+    padding: 1em;
+    backdrop-filter: blur(10px);
+    animation-name: fade-opacity;
+    animation-duration: 0.2s;
+}
+
+.project-modal-overlay{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(22, 22, 22, 0.226);
+    backdrop-filter: blur(22px);
+    z-index: 2;
+    animation-name: fade-opacity;
+    animation-duration: 0.2s;
+}
+
+@keyframes fade-opacity {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }

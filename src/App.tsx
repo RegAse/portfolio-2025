@@ -8,6 +8,11 @@ import * as data from "./data/data.json";
 function App() {
 	const [currentViewedProject, setCurrentViewedProject] = useState(0)
 
+	function handleClick(e : React.MouseEvent<HTMLElement>) {
+		e.stopPropagation();
+		setCurrentViewedProject(0)
+	}
+
 	return (
 		<>
 			{/* Photo of me */}
@@ -67,16 +72,46 @@ function App() {
 									<div style={{ fontSize: (currentViewedProject == project.id ? "0.5em" : "1em")}}>
 										<h6>{project.title}</h6>
 									</div>
-									{(project.id == currentViewedProject) &&
+									{/* {(project.id == currentViewedProject) &&
 										<div className="project-card-info">
 											<p>{project.description}</p>
 										</div>
-									}
+									} */}
 								</div>
 							</div>
 						))}
 					</div>
 				</div>
+
+				{(currentViewedProject != 0) &&
+					<>
+						<div className="project-modal-overlay" onClick={handleClick}>
+
+						</div>
+						<div className="project-modal">
+								<div className="project-modal-content">
+									<div className="row">
+										<div className="col-sm-7">
+											{(data.projects[currentViewedProject - 1].video == "") &&
+												<img className="img-fluid mx-auto" src={data.projects[currentViewedProject - 1].cover} alt="Failed" />
+											}
+											
+											{(data.projects[currentViewedProject - 1].video !== "") &&
+												<video className="img-fluid mx-auto" autoPlay muted loop>
+														<source src={data.projects[currentViewedProject - 1].video} type="video/mp4"/>
+														Your browser does not support the video tag.
+												</video>
+											}
+										</div>
+										<div className="col-sm-5">
+											<h3 className="mt-2">{data.projects[currentViewedProject - 1].title}</h3>
+											<p>{data.projects[currentViewedProject - 1].description}</p>
+										</div>
+									</div>
+								</div>
+						</div>
+					</>
+				}
 			</div>
 		</>
 	)
