@@ -36,7 +36,7 @@ function App() {
 				<div className="tab-section">
 					<div className="row">
 						<ul className="tab-links">
-							<li className="col-sm-3"><Link to={"stack/full-stack"} className="active">Full-Stack</Link></li>
+							<li className="col-sm-3"><Link to={"stack/full-stack"} className="active">Highlighted</Link></li>
 							<li className="col-sm-3"><Link to={"stack/front-end"}>Front-End</Link></li>
 							<li className="col-sm-3"><Link to={"stack/back-end"}>Back-End</Link></li>
 							<li className="col-sm-3"><Link to={"stack/game-dev"}>Game Dev</Link></li>
@@ -53,13 +53,13 @@ function App() {
 
 				{/* Tab Content grid of projects possibly gifs when hovered over or just thumbnails and able to enlarge it if clicked....*/}
 				<div className="projects-section">
-					<h4 className="text-center mb-3 mt-3">Projects</h4>
+					<h6 className="mb-3 mt-3">Highlighted Projects</h6>
 					<div className="row gx-3 gy-3">
 						{data.projects.map((project) => (
 							<div className="col-sm-3">
-								<div className="project-card">
-									<h5>{project.title}</h5>
-									<img className="img-fluid" src={project.cover} alt="Failed loading" />
+								<div className="project-card" style={{ backgroundImage: `url(${project.cover})`}}>
+									{/* <img className="img-fluid" src={project.cover} alt="Failed loading" /> */}
+									<h6>{project.title}</h6>
 								</div>
 							</div>
 						))}

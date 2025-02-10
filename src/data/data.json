@@ -2,7 +2,7 @@
     "projects": [
         {
             "id": 1,
-            "title": "Music Visualizer",
+            "title": "Music Visualizer (JS Canvas)",
             "description": "A music visualizer made in javascript",
             "cover": "./images/firefox_qB9V85shYV.jpg",
             "live-link": "https://gudmundur-music-player-visualizer-v2.netlify.app/"
@@ -30,7 +30,7 @@
         },
         {
             "id": 5,
-            "title": "Music Visualizer",
+            "title": "Music Visualizer (Three.js)",
             "description": "A music visualizer I made with React and three.js. I created many different visualizers that give different experiences and you can easily switch between visualizers from the sidebar in real-time. There is also a distraction free mode which will disable the UI so you can enjoy the visuals.",
             "cover": "./images/music-visualizer-1.jpg",
             "live-link": "https://gudmundur-music-player-visualizer-v2.netlify.app/"

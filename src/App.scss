@@ -77,12 +77,26 @@ body {
     // border: 0.15em solid rgb(238, 238, 238);
     background-color: rgb(252, 252, 252);
     box-shadow: 3px 3px 12px #e6e6e6;
-    border-radius: 3%;
+    // border-radius: 4%;
+    border-radius: 4%;
     padding: 1em;
+    height: 10em;
+    // background-size: cover;
+    background-size: 100%;
+    background-position: center;
+    color: white;
+
+    transition: all 0.1s;
+    scale: 1.00;
 }
 
 .project-card:hover{
     cursor: pointer;
+    background-size: 105%;
     background-color: rgb(156, 156, 207);
+    // border-radius: 4% 3% 0% 330% / 12% 0% 33% 27%;
+    // border-radius: 0% 100% 34% 66% / 100% 45% 55% 0% ;
+    box-shadow: 3px 3px 12px #0000007c;
     color: white;
+    scale: 1.05;
 }
