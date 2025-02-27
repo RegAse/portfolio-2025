@@ -7,7 +7,7 @@
             "cover": "/./images/music-visualizer-1.jpg",
             "video": "",
             "live-link": "https://gudmundur-music-player-visualizer-v2.netlify.app/",
-            "tags": ["React", "SCSS"],
+            "tags": ["Three.js", "React", "SCSS"],
             "group": "front-end"
         },
         {
@@ -17,7 +17,7 @@
             "cover": "/./images/rIYElmeL8O.jpg",
             "video": "./videos/zen-juggle-preview.mp4",
             "live-link": "https://gudmunduraxel.itch.io/zen-juggle",
-            "tags": ["React", "SCSS"],
+            "tags": ["C#", "Unity"],
             "group": "game-dev"
         },
         {
@@ -27,7 +27,7 @@
             "cover": "/./images/ue-game.jpg",
             "video": "./videos/ue-game.mp4",
             "live-link": "",
-            "tags": ["React", "SCSS"],
+            "tags": ["C++", "Unreal Engine"],
             "group": "game-dev"
         },
         {
@@ -37,7 +37,7 @@
             "cover": "/./images/qkBPmT4MGw-crop.jpg",
             "video": "",
             "live-link": "https://gudmunduraxel.itch.io/morns",
-            "tags": ["React", "SCSS"],
+            "tags": ["C#", "Unity", "ShaderLab"],
             "group": "game-dev"
         },
         {
@@ -47,7 +47,7 @@
             "cover": "/./images/firefox_qB9V85shYV.jpg",
             "video": "",
             "live-link": "https://gudmundur-music-player-visualizer.netlify.app/",
-            "tags": ["React", "SCSS"],
+            "tags": ["React", "JavaScript", "SCSS"],
             "group": "front-end"
         },
         {
@@ -57,8 +57,28 @@
             "cover": "/./images/portfolio-1.jpg",
             "video": "",
             "live-link": "",
-            "tags": ["React", "SCSS"],
+            "tags": ["React", "SCSS", "Vite"],
             "group": "front-end"
+        },
+        {
+            "id": 7,
+            "title": "TV Show App Website Front-End",
+            "description": "TV show app website I created with React you can explore various tv shows and see their seasons and episodes. There is a very nice fade out transition between pages to make the website have more of a premium feel. You can also get suggestions to what you want to watch. React was used for the front-end and Laravel was used as an API to store all data about tv shows. Laravel was also used to retrieve data from an external API and store it in my own database.",
+            "cover": "/./images/tv-show-app-website-1.jpg",
+            "video": "/videos/tv-show-app-1.mp4",
+            "live-link": "",
+            "tags": ["React", "TypeScript", "Framer Motion", "API", "PHP", "SCSS"],
+            "group": "front-end"
+        },
+        {
+            "id": 8,
+            "title": "TV Show App Website Back-End",
+            "description": "TV show app website I created with React you can explore various tv shows and see their seasons and episodes. There is a very nice fade out transition between pages to make the website have more of a premium feel. You can also get suggestions to what you want to watch. React was used for the front-end and Laravel was used as an API to store all data about tv shows. Laravel was also used to retrieve data from an external API and store it in my own database.",
+            "cover": "/./images/tv-show-app-website-1.jpg",
+            "video": "/videos/tv-show-app-1.mp4",
+            "live-link": "",
+            "tags": ["API", "PHP"],
+            "group": "back-end"
         }
     ]
 }

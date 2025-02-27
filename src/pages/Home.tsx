@@ -74,6 +74,11 @@ function Home() {
 									{/* <img className="img-fluid" src={project.cover} alt="Failed loading" /> */}
 									<div style={{ fontSize: (currentViewedProject == project.id ? "0.5em" : "1em")}}>
 										<h6>{project.title}</h6>
+										<div className="project-tags">
+                                            {project.tags.slice(0, 3).map((tag) => (
+                                                <div>{tag}</div>
+                                            ))}
+                                        </div>
 									</div>
 									{/* {(project.id == currentViewedProject) &&
 										<div className="project-card-info">
