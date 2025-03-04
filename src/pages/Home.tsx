@@ -19,12 +19,12 @@ function Home() {
 	return (
 		<>
 			{/* Photo of me */}
-			<div className="profile-section-bg" style={{ backgroundImage: "url(/images/music-visualizer-1.jpg)"}}>
+			<div className="profile-section-bg" style={{ backgroundImage: "url(/portfolio-2025/images/music-visualizer-1.jpg)"}}>
 				<div className="container">
 					<div className="profile-section">
 					<div className="row">
 						<div className="col-md-2">
-							<img className="img-fluid mx-auto" height={150} src="/images/me-4.jpg" alt="Failed" />
+							<img className="img-fluid mx-auto" height={150} src="/portfolio-2025/images/me-4.jpg" alt="Failed" />
 						</div>
 						<div className="col-md-9">
 							<h2>Guðmundur Axel Guðrúnarson</h2>
