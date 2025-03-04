@@ -9,7 +9,7 @@ import { Project } from "../types/Project";
 function Home() {
 	const [currentViewedProject, setCurrentViewedProject] = useState(0);
     const { stack } = useParams();
-    const [projects, setProjects] = useState<Project[]>(data.projects.filter(x => stack == undefined || x.group == stack));
+    const [projects] = useState<Project[]>(data.projects.filter(x => stack == undefined || x.group == stack));
 
 	function handleClick(e : React.MouseEvent<HTMLElement>) {
 		e.stopPropagation();
