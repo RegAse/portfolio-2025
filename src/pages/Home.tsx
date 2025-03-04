@@ -73,7 +73,7 @@ function Home() {
 									}} onClick={() => setCurrentViewedProject(project.id)}>
 									{/* <img className="img-fluid" src={project.cover} alt="Failed loading" /> */}
 									<div style={{ fontSize: (currentViewedProject == project.id ? "0.5em" : "1em")}}>
-										<h6>{project.title}</h6>
+										<h6 className={(project["highlight-text"] == true ? "highlight-text" : "")}>{project.title}</h6>
 										<div className="project-tags">
                                             {project.tags.slice(0, 3).map((tag) => (
                                                 <div>{tag}</div>
@@ -94,32 +94,49 @@ function Home() {
 				{(currentViewedProject != 0) &&
 					<>
 						<div className="project-modal-overlay" onClick={handleClick}>
-
+							
 						</div>
 						<div className="project-modal">
-								<div className="project-modal-content">
-									<div className="row">
-										<div className="col-sm-7">
-											{(data.projects[currentViewedProject - 1].video == "") &&
-												<img className="img-fluid mx-auto" src={data.projects[currentViewedProject - 1].cover} alt="Failed" />
-											}
-											
-											{(data.projects[currentViewedProject - 1].video !== "") &&
-												<video className="img-fluid mx-auto" autoPlay muted loop>
-														<source src={data.projects[currentViewedProject - 1].video} type="video/mp4"/>
-														Your browser does not support the video tag.
-												</video>
-											}
-										</div>
-										<div className="col-sm-5">
-											<h3 className="mt-2">{data.projects[currentViewedProject - 1].title}</h3>
-											<p>{data.projects[currentViewedProject - 1].description}</p>
-											{(data.projects[currentViewedProject - 1]["live-link"] != "") &&
-												<a href={data.projects[currentViewedProject - 1]["live-link"]}>Check it out here</a>
-											}
-										</div>
+							<button className="btn btn-exit" onClick={handleClick}>X</button>
+							<div className="project-modal-content">
+								<div className="row">
+									<div className="col-sm-7">
+										{(data.projects[currentViewedProject - 1].video == "") &&
+											<img className="img-fluid mx-auto" src={data.projects[currentViewedProject - 1].cover} alt="Failed" />
+										}
+										
+										{(data.projects[currentViewedProject - 1].video !== "") &&
+											<video className="img-fluid mx-auto" autoPlay muted loop>
+													<source src={data.projects[currentViewedProject - 1].video} type="video/mp4"/>
+													Your browser does not support the video tag.
+											</video>
+										}
 									</div>
+									<div className="col-sm-5">
+										<h3 className="mt-2">{data.projects[currentViewedProject - 1].title}</h3>
+										<p>{data.projects[currentViewedProject - 1].description}</p>
+										{(data.projects[currentViewedProject - 1]["live-link"] != "") &&
+											<a href={data.projects[currentViewedProject - 1]["live-link"]}>Check it out here</a>
+										}
+
+										{(data.projects[currentViewedProject - 1]["code-link"] != "") &&
+											<a href={data.projects[currentViewedProject - 1]["code-link"]}>View Source Code</a>
+										}
+									</div>
+									{(data.projects[currentViewedProject - 1]["images"] != undefined) &&
+										<div className="project-images col-sm-12 mt-5">
+											<h5 className="text-center">Project Images</h5>
+											<div className="row">
+											{data.projects[currentViewedProject - 1]["images"].map((image) => (
+												<div className="project-images-item col-sm-6 mt-3">
+													<img className="img-fluid mx-auto" src={image} alt="Failed" />
+												</div>
+											))}
+											</div>
+										</div>
+									}
 								</div>
+							</div>
 						</div>
 					</>
 				}

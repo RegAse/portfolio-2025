@@ -7,4 +7,6 @@ export interface Project {
     "live-link": string;
     tags: string [];
     group: string;
+    "highlight-text": boolean;
+    images: string[];
 }

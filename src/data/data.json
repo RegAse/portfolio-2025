@@ -8,7 +8,9 @@
             "video": "",
             "live-link": "https://gudmundur-music-player-visualizer-v2.netlify.app/",
             "tags": ["Three.js", "React", "SCSS"],
-            "group": "front-end"
+            "group": "front-end",
+            "highlight-text": false,
+            "code-link": ""
         },
         {
             "id": 2,
@@ -18,7 +20,9 @@
             "video": "./videos/zen-juggle-preview.mp4",
             "live-link": "https://gudmunduraxel.itch.io/zen-juggle",
             "tags": ["C#", "Unity"],
-            "group": "game-dev"
+            "group": "game-dev",
+            "highlight-text": false,
+            "code-link": ""
         },
         {
             "id": 3,
@@ -28,7 +32,9 @@
             "video": "./videos/ue-game.mp4",
             "live-link": "",
             "tags": ["C++", "Unreal Engine"],
-            "group": "game-dev"
+            "group": "game-dev",
+            "highlight-text": false,
+            "code-link": ""
         },
         {
             "id": 4,
@@ -38,7 +44,9 @@
             "video": "",
             "live-link": "https://gudmunduraxel.itch.io/morns",
             "tags": ["C#", "Unity", "ShaderLab"],
-            "group": "game-dev"
+            "group": "game-dev",
+            "highlight-text": false,
+            "code-link": ""
         },
         {
             "id": 5,
@@ -48,17 +56,21 @@
             "video": "",
             "live-link": "https://gudmundur-music-player-visualizer.netlify.app/",
             "tags": ["React", "JavaScript", "SCSS"],
-            "group": "front-end"
+            "group": "front-end",
+            "highlight-text": false,
+            "code-link": ""
         },
         {
             "id": 6,
             "title": "My Portfolio",
-            "description": "Created a portfolio from scratch with React, SCSS and TypeScript. The primary goal of this project was to showcase my projects that I have worked on.",
+            "description": "Created a portfolio from scratch with React, SCSS and TypeScript. The primary goal of this project was to showcase my projects that I have worked on. The portfolio has a grouping mechanism so you can view only the relevant experience I have in a certain field.",
             "cover": "/./images/portfolio-1.jpg",
             "video": "",
             "live-link": "",
             "tags": ["React", "SCSS", "Vite"],
-            "group": "front-end"
+            "group": "front-end",
+            "highlight-text": false,
+            "code-link": ""
         },
         {
             "id": 7,
@@ -68,7 +80,9 @@
             "video": "/videos/tv-show-app-1.mp4",
             "live-link": "",
             "tags": ["React", "TypeScript", "Framer Motion", "API", "PHP", "SCSS"],
-            "group": "front-end"
+            "group": "front-end",
+            "highlight-text": false,
+            "code-link": ""
         },
         {
             "id": 8,
@@ -78,7 +92,58 @@
             "video": "/videos/tv-show-app-1.mp4",
             "live-link": "",
             "tags": ["API", "PHP"],
-            "group": "back-end"
+            "group": "back-end",
+            "highlight-text": false,
+            "code-link": ""
+        },
+        {
+            "id": 9,
+            "title": "Hotel Database",
+            "description": "Designed a hotel database for a school project the project was to make a simple database however I had so much fun with making it that I made it much larger and complex to handle various situations that might come up in an actual hotel.",
+            "cover": "/./images/hotel-database.PNG",
+            "video": "",
+            "live-link": "",
+            "tags": ["MYSQL", "Database Design"],
+            "group": "back-end",
+            "highlight-text": true,
+            "code-link": "https://github.com/RegAse/w_hotel/blob/master/gudmundur-hotel.sql"
+        },
+        {
+            "id": 10,
+            "title": "Reflex (C# ORM)",
+            "description": "Created a ORM in C# that communicates with an external database. You create an object in C# and then you can call save to commit the model changes to the external database.",
+            "cover": "/./images/csharp-reflex.png",
+            "video": "",
+            "live-link": "",
+            "tags": ["MYSQL", "Database", "ORM", "Data"],
+            "group": "back-end",
+            "highlight-text": true,
+            "code-link": "https://github.com/RegAse/Reflex/blob/master/Reflex%20Example/ViewModels/MainWindowViewModel.cs"
+        },
+        {
+            "id": 11,
+            "title": "Aircraft DB using procedures",
+            "description": "A school project where I worked on creating procedures, functions and views for a aircraft database in MYSQL.",
+            "cover": "/./images/aircraft-db-cover.png",
+            "video": "",
+            "live-link": "",
+            "tags": ["MYSQL", "Database"],
+            "group": "back-end",
+            "highlight-text": true,
+            "code-link": "https://github.com/RegAse/database-code/blob/main/aircraft-database-school-project-procedures-functions-views.sql"
+        },
+        {
+            "id": 12,
+            "title": "Web designs I made for Final Project BSc.",
+            "description": "A collection of web designs I have made in Figma, some of these designs I have converted to actual websites",
+            "cover": "/./images/loka/loka-2.jpg",
+            "video": "",
+            "live-link": "",
+            "tags": ["Designs", "Figma"],
+            "group": "front-end",
+            "highlight-text": true,
+            "code-link": "",
+            "images": ["/./images/loka/loka-2.jpg", "/./images/loka/loka-3.jpg", "/./images/loka/loka-4.png", "/./images/loka/loka-5.jpg"]
         }
     ]
 }
