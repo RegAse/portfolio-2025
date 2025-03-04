@@ -123,7 +123,7 @@ function Home() {
 											<a href={data.projects[currentViewedProject - 1]["code-link"]}>View Source Code</a>
 										}
 									</div>
-									{(data.projects[currentViewedProject - 1]["images"] != undefined) &&
+									{(data.projects[currentViewedProject - 1]["images"].length > 0) &&
 										<div className="project-images col-sm-12 mt-5">
 											<h5 className="text-center">Project Images</h5>
 											<div className="row">
