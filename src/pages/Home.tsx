@@ -140,6 +140,9 @@ function Home() {
 						</div>
 					</>
 				}
+				<footer className="mt-5">
+
+				</footer>
 			</div>
 		</>
 	)
