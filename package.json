@@ -1,13 +1,13 @@
 {
   "name": "portfolio-2025",
-  "homepage": "https://regase.github.io/react-gh-pages",
+  "homepage": "https://regase.github.io/Portfolio-2025/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
