@@ -5,14 +5,17 @@ import { Link, useParams } from "react-router-dom";
 
 import * as data from ".././data/data.json";
 import { Project } from "../types/Project";
+import ViewProject from "../components/ViewProject";
 
 function Home() {
 	const [currentViewedProject, setCurrentViewedProject] = useState(0);
     const { stack } = useParams();
     const [projects] = useState<Project[]>(data.projects.filter(x => stack == undefined || x.group == stack));
 
-	function handleClick(e : React.MouseEvent<HTMLElement>) {
-		e.stopPropagation();
+
+	function handleClick() {
+		console.log("CLOSE !!!");
+		// e.stopPropagation();
 		setCurrentViewedProject(0)
 	}
 
@@ -93,56 +96,7 @@ function Home() {
 
 				{(currentViewedProject != 0) &&
 					<>
-						<div className="project-modal-overlay" onClick={handleClick}>
-							
-						</div>
-						<div className="project-modal">
-							<button className="btn btn-exit" onClick={handleClick}>X</button>
-							<div className="project-modal-content">
-								<div className="row">
-									<div className="col-sm-7">
-										{(data.projects[currentViewedProject - 1].video == "") &&
-											<img className="img-fluid mx-auto" src={data.projects[currentViewedProject - 1].cover} alt="Failed" />
-										}
-										
-										{(data.projects[currentViewedProject - 1].video !== "") &&
-											<div className="video-container">
-												<div className="video-poster">
-													<span className="loader"></span>
-												</div>
-												<video className="video-media img-fluid mx-auto" autoPlay muted loop>
-														<source src={data.projects[currentViewedProject - 1].video} type="video/mp4"/>
-														Your browser does not support the video tag.
-												</video>
-											</div>
-										}
-									</div>
-									<div className="col-sm-5">
-										<h3 className="mt-2">{data.projects[currentViewedProject - 1].title}</h3>
-										<p>{data.projects[currentViewedProject - 1].description}</p>
-										{(data.projects[currentViewedProject - 1]["live-link"] != "") &&
-											<a href={data.projects[currentViewedProject - 1]["live-link"]}>Check it out here</a>
-										}
-
-										{(data.projects[currentViewedProject - 1]["code-link"] != "") &&
-											<a href={data.projects[currentViewedProject - 1]["code-link"]}>View Source Code</a>
-										}
-									</div>
-									{(data.projects[currentViewedProject - 1]["images"].length > 0) &&
-										<div className="project-images col-sm-12 mt-5">
-											<h5 className="text-center">Project Images</h5>
-											<div className="row">
-											{data.projects[currentViewedProject - 1]["images"].map((image) => (
-												<div className="project-images-item col-sm-6 mt-3">
-													<img className="img-fluid mx-auto" src={image} alt="Failed" />
-												</div>
-											))}
-											</div>
-										</div>
-									}
-								</div>
-							</div>
-						</div>
+						<ViewProject project={data.projects[currentViewedProject - 1]} handleClick={handleClick}></ViewProject>
 					</>
 				}
 				<footer className="mt-5">

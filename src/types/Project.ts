@@ -5,6 +5,7 @@ export interface Project {
     cover: string;
     video: string;
     "live-link": string;
+    "code-link": string;
     tags: string [];
     group: string;
     "highlight-text": boolean;
