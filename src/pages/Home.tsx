@@ -14,7 +14,6 @@ function Home() {
 
 
 	function handleClick() {
-		console.log("CLOSE !!!");
 		// e.stopPropagation();
 		setCurrentViewedProject(0)
 	}
@@ -29,7 +28,7 @@ function Home() {
 						<div className="col-6 col-sm-6 col-md-2">
 							<img className="img-fluid mx-auto" height={150} src="/portfolio-2025/images/me-4.jpg" alt="Failed" />
 						</div>
-						<div className="col-9 col-md-9">
+						<div className="col-12 col-md-9">
 							<h2 className="mt-3">Guðmundur Axel Guðrúnarson</h2>
 							<p>I work hard and one of my best skills is to always keep learning and adapting to tech and 
 								thus I am very comfortable with working on various languages or frameworks. And not only limited 
