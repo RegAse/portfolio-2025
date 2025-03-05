@@ -106,10 +106,15 @@ function Home() {
 										}
 										
 										{(data.projects[currentViewedProject - 1].video !== "") &&
-											<video className="img-fluid mx-auto" autoPlay muted loop>
-													<source src={data.projects[currentViewedProject - 1].video} type="video/mp4"/>
-													Your browser does not support the video tag.
-											</video>
+											<div className="video-container">
+												<div className="video-poster">
+													<span className="loader"></span>
+												</div>
+												<video className="video-media img-fluid mx-auto" autoPlay muted loop>
+														<source src={data.projects[currentViewedProject - 1].video} type="video/mp4"/>
+														Your browser does not support the video tag.
+												</video>
+											</div>
 										}
 									</div>
 									<div className="col-sm-5">

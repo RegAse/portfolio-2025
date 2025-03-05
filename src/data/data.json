@@ -18,7 +18,7 @@
             "title": "Zen Juggle",
             "description": "A solo video game project in a game development course at RU. The main task in this project was creating the effects and making the user feel the impact when the balls bounce of the paddles.",
             "cover": "/./portfolio-2025/images/rIYElmeL8O.jpg",
-            "video": "../portfolio-2025/videos/zen-juggle-preview.mp4",
+            "video": "../portfolio-2025/videos/zen-juggle-preview2.mp4",
             "live-link": "https://gudmunduraxel.itch.io/zen-juggle",
             "tags": ["C#", "Unity"],
             "group": "game-dev",
