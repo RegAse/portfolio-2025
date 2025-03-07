@@ -7,6 +7,9 @@ import * as data from ".././data/data.json";
 import { Project } from "../types/Project";
 import ViewProject from "../components/ViewProject";
 
+// Icons
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 function Home() {
 	const [currentViewedProject, setCurrentViewedProject] = useState(0);
     const { stack } = useParams();
@@ -25,15 +28,26 @@ function Home() {
 				<div className="container">
 					<div className="profile-section">
 					<div className="row">
-						<div className="col-6 col-sm-6 col-md-2">
-							<img className="img-fluid mx-auto" height={150} src="/portfolio-2025/images/me-4.jpg" alt="Failed" />
+						<div className="col-6 col-sm-6 col-md-2"> 
+							<img className="img-fluid mx-auto mt-3" height={150} src="/portfolio-2025/images/me-4.jpg" alt="Failed" />
 						</div>
 						<div className="col-12 col-md-9">
+							<ul className="socials-list">
+								<li><a href="https://github.com/RegAse"><FaGithub /></a></li>
+								<li><a href="https://www.linkedin.com/in/gudmundur-axel-gudrunarson/"><FaLinkedin /></a></li>
+							</ul>
 							<h2 className="mt-3">Guðmundur Axel Guðrúnarson</h2>
-							<p>I work hard and one of my best skills is to always keep learning and adapting to tech and 
-								thus I am very comfortable with working on various languages or frameworks. And not only limited 
-								to the ones that I am already experienced in such as React, TypeScript, SCSS (CSS), Node.js, Next.js,
-									Figma, PostgreSQL, C#, MYSQL, Git, Java, PHP, Laravel, MVC, Python, C++, sk-learn, API.
+							<h6 className="subtitle">B.Sc. Computer Science, Full-Stack Web Developer, Indie Game Developer</h6>
+							<p className="mt-3">
+								Hi! <br></br>
+								My name is Guðmundur, I am a web and software developer, I have a B.Sc. Degree in Computer Science from Reykjavík University along with that I also attended
+								Computer Path at Tækniskólinn where I first learned how to code. <br></br><br></br>
+
+								I am a problem solver at heart, I excell working in teams and also independently. I am proficient in various programming languages and am fast at adapting so if
+								there is something I haven't familiaried myself with yet then I can get up to speed fast.
+								<br></br>
+								<br></br>
+								Get in touch with me on LinkedIn or email me if you are interested in getting to know me further!
 							</p>
 						</div>
 					</div>
