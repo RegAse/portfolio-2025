@@ -351,18 +351,18 @@ body {
 
     li{
         float: left;
-        background-color: rgb(68, 89, 107);
-        color: rgb(255, 255, 255);
-        font-size: 1.05em;
-        padding: 1.5em 1.5em;
+        background-color: rgb(238, 238, 238);
+        // color: rgb(255, 255, 255);
+        font-size: 1.2em;
+        padding: 1.2em 1.2em;
         margin-right: 0.5em;
         margin-top: 0.5em;
         text-align: center;
         border-radius: 10px;
         // display: block;
-        box-shadow: 3px 3px 12px #4e4e4e7c;
+        box-shadow: 3px 3px 12px #dfdfdf7c;
     }
     li:hover{
-        background-color: rgb(61, 100, 145);
+        background-color: rgb(253, 242, 196);
     }
 }
