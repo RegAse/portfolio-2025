@@ -174,11 +174,6 @@
             "icon": "/portfolio-2025/svgs/javascript.svg"
         },
         {
-            "id": 4,
-            "title": "Node.js",
-            "icon": "/portfolio-2025/svgs/nodejs.svg"
-        },
-        {
             "id": 5,
             "title": "C#",
             "icon": "/portfolio-2025/svgs/c-sharp.svg"
@@ -219,6 +214,11 @@
             "id": 3,
             "title": "Laravel",
             "icon": "/portfolio-2025/svgs/laravel.svg"
+        },
+        {
+            "id": 4,
+            "title": "Node.js",
+            "icon": "/portfolio-2025/svgs/nodejs.svg"
         }
     ],
     "programs": [
