@@ -340,3 +340,29 @@ body {
         scale: 1.2;
     }
 }
+
+
+// Skills list
+
+.skills-list{
+    // background-color: black;
+    // display: inline;
+    list-style: none;
+
+    li{
+        float: left;
+        background-color: rgb(61, 90, 114);
+        color: rgb(255, 255, 255);
+        font-size: 1.05em;
+        padding: 1.5em 1.5em;
+        margin-right: 0.5em;
+        margin-top: 0.5em;
+        text-align: center;
+        border-radius: 10px;
+        // display: block;
+        box-shadow: 3px 3px 12px #0000007c;
+    }
+    li:hover{
+        background-color: rgb(61, 100, 145);
+    }
+}

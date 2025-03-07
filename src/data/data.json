@@ -156,5 +156,101 @@
             "code-link": "",
             "images": ["/./portfolio-2025/images/loka/loka-2.jpg", "/./portfolio-2025/images/loka/loka-3.jpg", "/./portfolio-2025/images/loka/loka-4.png", "/./portfolio-2025/images/loka/loka-5.jpg"]
         }
+    ],
+    "progs": [
+        {
+            "id": 1,
+            "title": "TypeScript",
+            "icon": "/portfolio-2025/svgs/typescript-icon.svg"
+        },
+        {
+            "id": 2,
+            "title": "SCSS",
+            "icon": "/portfolio-2025/svgs/sass.svg"
+        },
+        {
+            "id": 3,
+            "title": "JavaScript",
+            "icon": "/portfolio-2025/svgs/javascript.svg"
+        },
+        {
+            "id": 4,
+            "title": "Node.js",
+            "icon": "/portfolio-2025/svgs/nodejs.svg"
+        },
+        {
+            "id": 5,
+            "title": "C#",
+            "icon": "/portfolio-2025/svgs/c-sharp.svg"
+        },
+        {
+            "id": 6,
+            "title": "Java",
+            "icon": "/portfolio-2025/svgs/java.svg"
+        },
+        {
+            "id": 7,
+            "title": "PHP",
+            "icon": "/portfolio-2025/svgs/php-alt.svg"
+        },
+        {
+            "id": 8,
+            "title": "Python",
+            "icon": "/portfolio-2025/svgs/python.svg"
+        },
+        {
+            "id": 9,
+            "title": "C++",
+            "icon": "/portfolio-2025/svgs/c-plusplus.svg"
+        }
+    ],
+    "frameworks": [
+        {
+            "id": 1,
+            "title": "React",
+            "icon": "/portfolio-2025/svgs/react.svg"
+        },
+        {
+            "id": 2,
+            "title": "Next.js",
+            "icon": "/portfolio-2025/svgs/nextjs.svg"
+        },
+        {
+            "id": 3,
+            "title": "Laravel",
+            "icon": "/portfolio-2025/svgs/laravel.svg"
+        }
+    ],
+    "programs": [
+        {
+            "id": 1,
+            "title": "Figma",
+            "icon": "/portfolio-2025/svgs/figma.svg"
+        },
+        {
+            "id": 2,
+            "title": "Unity",
+            "icon": "/portfolio-2025/svgs/unity.svg"
+        },
+        {
+            "id": 3,
+            "title": "Unreal Engine",
+            "icon": "/portfolio-2025/svgs/unrealengine.svg"
+        },
+        {
+            "id": 4,
+            "title": "Visual Studio Code",
+            "icon": "/portfolio-2025/svgs/visual-studio-code.svg"
+        },
+        {
+            "id": 5,
+            "title": "Blender",
+            "icon": "/portfolio-2025/svgs/blender.svg"
+        },
+        {
+            "id": 6,
+            "title": "Git",
+            "icon": "/portfolio-2025/svgs/git.svg"
+        }
     ]
 }

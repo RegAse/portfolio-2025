@@ -47,7 +47,7 @@ function Home() {
 								there is something I haven't familiaried myself with yet then I can get up to speed fast.
 								<br></br>
 								<br></br>
-								Get in touch with me on LinkedIn or email me if you are interested in getting to know me further!
+								Get in touch with me on LinkedIn or email me if you are interested in having a chat!
 							</p>
 						</div>
 					</div>
@@ -107,13 +107,90 @@ function Home() {
 					</div>
 				</div>
 
+				<div className="skills-section mt-5">
+					<h3>Skills</h3>
+					<p>Technologies I am familiar with</p>
+					<div className="row">
+						<h5>Programming Languages</h5>
+						<ul className="skills-list">
+							{data["progs"].map((lang) => (
+								<li>
+									<img width={80} height={40} src={lang.icon} alt="Failed" />
+									<p className="mt-2">{lang.title}</p>
+								</li>
+							))}
+							{/* <li>TypeScript</li>
+							<li>SCSS</li>
+							<li>CSS</li>
+							<li>JavaScript</li>
+							<li>Node.js</li>
+							<li><img height={50} src="/portfolio-2025/svgs/c-sharp.svg" alt="Failed" /></li>
+							<li>Java</li>
+							<li>PHP</li>
+							<li>
+								<img height={50} src="/portfolio-2025/svgs/python.svg" alt="Failed" />
+								<p className="mt-2">Python</p>
+							</li>
+							<li>
+								<img height={50} src="/portfolio-2025/svgs/c-plusplus.svg" alt="Failed" />
+								<p className="mt-2">C++</p>
+							</li> */}
+						</ul>
+					</div>
+					<div className="row">
+						<h5>Frameworks</h5>
+						<ul className="skills-list">
+							{data["frameworks"].map((lang) => (
+								<li>
+									<img width={80} height={40} src={lang.icon} alt="Failed" />
+									<p className="mt-2">{lang.title}</p>
+								</li>
+							))}
+							{/* <li><img height={50} src="/portfolio-2025/svgs/react.svg" alt="Failed" /></li>
+							<li>Next.js</li>
+							<li>Laravel</li> */}
+						</ul>
+					</div>
+					<div className="row">
+						<h5>Programs</h5>
+						<ul className="skills-list">
+							{data["programs"].map((lang) => (
+								<li>
+									<img width={80} height={40} src={lang.icon} alt="Failed" />
+									<p className="mt-2">{lang.title}</p>
+								</li>
+							))}
+							{/* <li><img height={50} src="/portfolio-2025/svgs/react.svg" alt="Failed" /></li>
+							<li>TypeScript</li>
+							<li>SCSS</li>
+							<li>CSS</li>
+							<li>Node.js</li>
+							<li>Next.js</li>
+							<li>Figma</li>
+							<li>PostgreSQL</li>
+							<li><img height={50} src="/portfolio-2025/svgs/c-sharp.svg" alt="Failed" /></li>
+							<li>MYSQL</li>
+							<li>Git</li>
+							<li>Java</li>
+							<li>PHP</li>
+							<li>Laravel</li>
+							<li>MVC</li>
+							<li>Python</li>
+							<li>C++</li>
+							<li>sk-learn</li>
+							<li>API</li> */}
+						</ul>
+					</div>
+				</div>
+
 				{(currentViewedProject != 0) &&
 					<>
 						<ViewProject project={data.projects[currentViewedProject - 1]} handleClick={handleClick}></ViewProject>
 					</>
 				}
-				<footer className="mt-5">
 
+				<footer className="mt-5">
+					
 				</footer>
 			</div>
 		</>
